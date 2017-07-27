@@ -13,14 +13,31 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	It allows developer to pick and choose which of the changes she made will be part of the 
+	commit, rather than require that all changes in the working dorectory be part of 
+	the commit.  This allows for flexibility, especially when working on many chnages 
+	concurrently, in which case, subsets of changes which logically go tother can be 
+	packaged into commits.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	Keep changes related to a new feature private & local unitl they are ready to commit for
+	others to see. Try out experimental code without impacting the main line. Create a branch for a 
+	product release development while keeping the master for prodcution & always working. Production
+	bug fixes can also be made on a different branch separate from active development and deployed
+	to production while new release development is going on.
 
 How do the diagrams help you visualize the branch structure?
-
+	Visually display the branches, the commits on each branch and the sequence of chnages that hapened as 
+	well as your HEAD in the tree, ie the pointer to the commit we are on. 
+	
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	A single branch that contians history of changes from both the branches. Branch i sinitially created off of
+	a commit node and on merge, the branch of changes is merged back into another branch. SInce these are
+	forks and joins of a sequence of changes, the diagram is represented in this way.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	Cons: can sometimes make unintended decision on merge, which can be confusing to resovle if lots of files are involved.	
+	Pro: fast, efficient, mostly correct, no errors
