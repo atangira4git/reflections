@@ -1,4 +1,3 @@
-
 When would you want to use a remote repository rather than keeping all your work
 local?
 
@@ -9,24 +8,34 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Manual is more efficient resource-wise (sice it is getting as needed) and also facilitates
+    management of branches, so there is fine grain xcontrol on the exact content one wants to pull.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
-
+    Fork baselines a repo from someone else in Github keeping track of the originator, clone 
+    copies an entire repository with no reference to the source form which the copy was made,
+    branch operates within a repository and allows scope management & context switching 
+    when making changes in a repository.
+bug fixes wher
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    Makes it possible to deermine the deltas from the last sync for pull requests 
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Without a VCS, an email or physical communications process / protocol would be the only option. A 
+    workflow managed by Github is lot more efficient.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Depends on the workflow.  Making chnages on a branch supports a distributed worklflow with a very stable master
+    from which production releases are made whereas develpers making changes directly on master is more of a 
+    centralized workflow with risk of unstable master branch. Centralized workflow is simpler but has less
+    flexibility and leads to increased overhead & inefficiency in case of large teams.  Branching for changes can 
+    support building releases or rolling back deployments based on individual features or bug fixes and provided 
+    fine grained control.
